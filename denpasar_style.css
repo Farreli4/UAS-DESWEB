@@ -1,8 +1,9 @@
 body{
 	margin: 0;
 	padding: 0;
-	font-weight: 700;
+	font-weight: 100;
 	cursor: auto;
+	font-family: 'Poppins', sans-serif !important;
 }
 .overlay{
 	z-index: 10000;
@@ -139,7 +140,10 @@ input[type=date]{
 	height: auto;
 }
 .navbar{
-	height: 100px;
+	background-color:#144272 ;
+	transform: translateY(-100px);
+	transition: 0.5s;
+	height: 80px;
 	width: 100%;
 	position: fixed;
 	z-index: 200;
@@ -353,6 +357,8 @@ input[type=date]{
 	padding: 0px 370px;
 }
 #accomodation-carousel{
+	transition: 1s;
+	transform: scale(0.5);
 	padding-left: 30px;
 	scrollbar-width: none;
 	overflow: auto;

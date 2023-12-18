@@ -2,10 +2,11 @@ function changebg(){
 	var navbars = document.getElementById('navbar')
 	var scrollValue = window.scrollY;
 	if (scrollValue < 600) {
+		navbars.style.transform = "translateY(-100px)";
 		document.getElementById("logo").style.opacity = "0";
-		navbars.classList.remove('nav-color');
 	}else{
-		navbars.classList.add('nav-color')
+		console.log(scrollValue);
+		navbars.style.transform = "translateY(0px)";
 		document.getElementById("logo").style.opacity = "1";
 	}
 }
@@ -27,3 +28,13 @@ dots.addEventListener('click', e => {
   	block: 'nearest',
     })
 })
+
+function changeAcco(){
+	var scrollValue = window.scrollY;
+	var acco = document.getElementById('accomodation-carousel')
+	if (scrollValue > 1200){
+		acco.style.transform = "scale(1.0)";
+	}
+}
+
+window.addEventListener('scroll', changeAcco);
