@@ -58,7 +58,7 @@ form label{
 	font-weight: 400;
 	letter-spacing: 3px;
 }
-input[type=text], #tipe, #date1, #date2{
+input[type=text], input[type=email], #tipe, #date1, #date2{
 	width: 100%;
 	padding: 12px;
 	border: 1px solid #ccc;
@@ -86,6 +86,9 @@ input[type=submit]:disabled{
 input[type=date]{
 	width: 100%;
 }
+#transaction-id{
+	display: none;
+}
 #addon{
 	border: none;
 	background-color: transparent;
@@ -100,6 +103,12 @@ input[type=date]{
 	padding: 0;
 }
 #valuess{
+	text-align: center;
+	text-decoration: 0;
+	padding: 0;
+	margin: 0;
+	background-color: transparent;
+	border: 0;
 	font-size: 30px;
 	font-weight: 700;
 }

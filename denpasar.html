@@ -33,11 +33,11 @@
 				<a href="javascript:history.back()" class="close">&times;</a>
 				<div class="overlay-content">
 					<div class="overlay-container">
-						<form action="booked.html">
-							<label>First Name</label>
-							<input type="text" placeholder="Your First Name" required>
-							<label>Last Name</label>
-							<input type="text" placeholder="Your Last Name" required>
+						<form action="booked.html" method="GET">
+							<label>Full Name</label>
+							<input type="text" placeholder="Your First Name" name="first-name" required>
+							<label>E-Mail</label>
+							<input type="email" placeholder="Your Last Name" name="last-name" required>
 							<label>Date</label>						
 							<div class="date-wrapper" id="dater">
 								    <div class="input-daterange input-group" >
@@ -46,18 +46,19 @@
 								    	<input type="text" class="input-sm form-control" name="end" id="date2" required/>
 								    </div>
 							</div>
-							<select name="type" id="tipe">
+							<select name="type" id="tipe" name="type-room">
 								<option value="725131" id="standard">Standard</option>
 								<option value="985500" id="superior">Superior</option>
 								<option value="1213250" id="junior">Junior Suite</option>
 								<option value="1534800" id="suite">Suite</option>
 							</select>
 							<label>Total Room</label>
-							<input type="text" placeholder="How Many Rooms" id="total-room" required>
+							<input type="text" placeholder="How Many Rooms" id="total-room" name="many-room" required>
 							<label>Total</label>
 							<br>
-							<label id="valuess"></label>
+							<input type="text" id="valuess" name="biaya" readonly>
 							<br>
+							<input type="text" id="transaction-id" name="id" readonly>
 							<input type="submit" value="Countinue" id="submits" disabled onclick="submitbutton()">
 							<br>
 							<input type="checkbox" value="true" id="ceksbox">
@@ -289,7 +290,7 @@
 	    	let Difference_In_Time = new Date(dat2).getTime() - new Date(dat1).getTime();
 	    	let Difference_In_Days = Math.round(Difference_In_Time / (1000 * 3600 * 24));
 	    	let type = document.getElementById('tipe').value;
-	    	document.getElementById('valuess').innerHTML = "IDR " + Math.round(type * Difference_In_Days * totalroom).toLocaleString() ;
+	    	document.getElementById('valuess').value = "IDR " + Math.round(type * Difference_In_Days * totalroom).toLocaleString() ;
 	    	console.log(totalroom);
 	    }
 	    function checkboxValue(){
@@ -331,7 +332,7 @@
 	    		alert("Minimal penyewaan hotel adalah satu hari, Dimohon Pengertiannya, Terima Kasih")
 	    		document.getElementById("submits").disabled = true; 
 	    	}else {
-
+	    		document.getElementById("transaction-id").value =  Math.floor(Math.random() * 192347)
 	    	}
 	    }
 </script>

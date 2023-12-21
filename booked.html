@@ -5,10 +5,79 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/booked_style.css">
 	<title>Booking Berhasil!!</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
 </head>
 <body>
 	<div id="container">
-		<img src="https://i.pinimg.com/564x/ec/e6/df/ece6dfa28d0bdfdd82db7802f3845ebe.jpg">
+		<div id="icon-left">
+			<a href="denpasar.html"><img src="icon/arrow.png"></a>
+		</div>
+		<div id="container-tab">
+			<img src="img/checkb.png" id="image-check">
+			<hr>
+			<p> Detail Transaksi</p>
+			<hr>
+			<div id="container-text">
+				<p id="transaction-id"></p>
+				<p id="data-user"></p>
+				<hr>
+				<h1 id="user-price"></h1>
+				<hr>	
+			</div>
+			<div id="warning">
+				<p>*The original receipt will be sent via email. If you have not received it within 24 hours, please contact Astor customer service at 09993</p>
+			</div>
+			<div id="icikiwir">
+				<img src="vid/haha.gif">
+			</div>
+		</div>
 	</div>
+
+<script>
+	document.getElementById("image-check").style.transform = "scale(1.0)";
+	document.getElementById("container-tab").style.transform = "scale(1.0)";
+
+
+	var data = window.location.search;
+	var param = new URLSearchParams(data);
+	console.log(param);
+	var transactionid = param.get("id");
+	var firstname = param.get("first-name");
+	var lastname = param.get("last-name");
+	var startdate = param.get("start");
+	var enddate = param.get("end");
+	var totalroom = param.get("many-room");
+	var price = param.get("biaya");
+	var types;
+
+	if(param.get("type") == "725131"){
+		types="Standard Room"
+	}
+	else if(param.get("type") == "985500"){
+		types="Superior Room"
+	}
+	else if(param.get("type") == "1213250"){
+		types="Junior Suite Room"
+	}
+	else{
+		types="Suite Room"
+	}
+
+	var
+	getData = "Transaction ID : " + transactionid + "<br>"; 
+	getData += "Full Name : " + firstname + "<br>";
+	getData += "E-mail : " + lastname + "<br>";
+	getData += "Start Date : " + startdate + "<br>";
+	getData += "End Date : " + enddate + "<br>";
+	getData += "Class : " + totalroom + " x " + types + "<br>";
+
+	var getPrice = "Expense : " + price + "<br>";
+
+	document.getElementById("data-user").innerHTML = getData;
+	document.getElementById("user-price").innerHTML = getPrice;
+
+</script>
 </body>
 </html>
