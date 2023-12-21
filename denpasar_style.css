@@ -149,7 +149,7 @@ input[type=date]{
 	height: auto;
 }
 .navbar{
-	background-color:#144272 ;
+	background-color: #141d72 ;
 	transform: translateY(-100px);
 	transition: 0.5s;
 	height: 80px;
@@ -258,11 +258,11 @@ input[type=date]{
 	}
 }
 .nav-color{ 
-	background-color: #144272; 
+	background-color: #141d72; 
 }
 .nav-coloropa{ 
 
-	background-color: #144272;
+	background-color: #141d72;
 	opacity: 0.8; 
 }
 .nav-transparent { 
@@ -276,7 +276,7 @@ input[type=date]{
 	height: 60px;
 	margin-top: 0;
 	padding: 0px 20px;
-	background-color: #144272;
+	background-color: #141d72;
 	column-gap: 10px;
 }
 #contact-header p{
@@ -544,7 +544,7 @@ input[type=date]{
 	padding: 20px 0;
 	text-align: center;
 	color: whitesmoke;
-	background-color: #144272;
+	background-color: #0F2167;
 	width: 100%;
 	height: 270px;
 }
