@@ -122,62 +122,66 @@ header{
     display: none;
 }
 
-.img {
+.contact{
     display: flex;
-    align-items: center;
-}
-
-.img img {
-    padding: 50px;
-    width:40% ;
-    height:40% ;
-    margin-left: 200px;
-    margin-bottom: 0;
-}
-
-.book {
     justify-content: center;
-    text-align: center;
-    text-decoration: none;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.address{
+    margin: 20px;
     border: 0.5px solid rgb(0, 0, 0);
-    background-color: rgb(202, 202, 202);
-    margin-left: 200px;
-    margin-bottom: 400px;
+    text-align: center;
     width: 400px;
-    height: 1%;
+    height: 300px;
 }
 
-.book h5{
-    margin-top: 5px;
-    margin-bottom: 10px;
+.address h4{
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
-.book p{
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 30px;
+.address img {
+    width: 100px;
+    height: 100px;
+    margin-top: 30px;
 }
 
-#get {
-    padding: 30px;
+.phone {
+    margin: 20px;
+    border: 0.5px solid rgb(0, 0, 0);
+    text-align: center;
+    width: 400px;
+    height: 300px;
 }
 
-.book #bok{
-    font-family: 'Poppins', sans-serif;
-    color: #fff;
-    margin: 60px;
-    border: 1px solid rgb(80, 80, 253);
-    background-color: rgb(80, 80, 253);
-    width: 50px;
-    text-decoration: none;
+.phone h4{
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
-.text{
-    padding: 50px;
-    margin-left: 200px;
-    margin-right: 200px;
+.phone img{
+    width: 100px;
+    height: 100px;
+    margin-top: 30px;
 }
 
-.text #cal{
-    padding-top: 30px;
+.mail{
+    margin: 20px;
+    border: 0.5px solid rgb(0, 0, 0);
+    text-align: center;
+    width: 400px;
+    height: 300px;
+}
+
+.mail h4{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.mail img{
+    width: 100px;
+    height: 100px;
+    margin-top: 30px;
 }
