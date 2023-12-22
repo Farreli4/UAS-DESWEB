@@ -89,7 +89,7 @@ header .kata h1 {
     height: 100vh;
     display: flex;
     align-items: center;
-    background-color: antiquewhite;
+    background-color: gainsboro;
 }
 
 .about .box-about {
@@ -125,12 +125,17 @@ header .kata h1 {
 .kata1 {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding-bottom: 20px;
+    color: rgba(12, 42, 125, 0.881);
+}
+
+.box p{
+    color: rgba(12, 42, 125, 0.881);
 }
 
 .hotel-features {
     width: 100%;
     height: 100vh;
-    background-color: antiquewhite;
+    background-color: gainsboro;
     margin-top: 100px;
 }
 
@@ -142,6 +147,7 @@ header .kata h1 {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 30px;
     margin-left: 100px;
+    color: rgba(12, 42, 125, 0.881);
 }
 
 .container-img {
@@ -203,7 +209,7 @@ header .kata h1 {
 .memo {
     width: 100%;
     height: auto;
-    background-color: antiquewhite;
+    background-color: gainsboro;
     margin-top: 100px;
     justify-content: center;
     align-items: center;
@@ -214,6 +220,7 @@ header .kata h1 {
     height: 300px;
     position: relative;
     margin-left: 100px;
+    color: rgba(12, 42, 125, 0.881);
 }
 
 .text-memo h1 {
@@ -251,7 +258,7 @@ header .kata h1 {
 }
 
 .discount {
-    background-color:antiquewhite;
+    background-color: gainsboro;
     width: 100%;
     height: 100vh;
     margin-top: 100px;
@@ -262,7 +269,7 @@ header .kata h1 {
 .discount .content {
     margin-top: 50px;
     padding-top: 50px;
-    background-color:antiquewhite;
+    background-color: gainsboro;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -271,7 +278,7 @@ header .kata h1 {
 #text-content {
     padding-top: 50px;
     padding-right: 40px;
-
+    color: rgba(12, 42, 125, 0.881);
 }
 
 .img-content {
@@ -279,15 +286,15 @@ header .kata h1 {
 }
 
 #book {
-    padding-top: 40px;
+    padding-top: 20px;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     color: rgb(0, 0, 0);
     font-style:initial;
     display: inline-block;
-    font-size: 40px;
-    border: 1px solid aliceblue;
-    border-radius: 400px;
+    font-size: 20px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 40px;
     margin-top: 20px;
 }
 
@@ -309,6 +316,7 @@ header .kata h1 {
     width: 400px;
     height: 300px;
     position: relative;
+    color: rgba(12, 42, 125, 0.881);
 }
 
 .news1 img{
@@ -320,6 +328,7 @@ header .kata h1 {
 .news h1{
     padding: 40px;
     margin-left: 40px;
+    color: rgba(12, 42, 125, 0.881);
 }
 
 .news h2{
@@ -337,6 +346,7 @@ header .kata h1 {
     width:400px ;
     height: 300px;
     position: relative;
+    color: rgba(12, 42, 125, 0.881);
 }
 
 .news2 img{
@@ -362,6 +372,7 @@ header .kata h1 {
 #finger-tab{
 	display: flex;
 	flex-direction: column;
+    color: rgba(12, 42, 125, 0.881);
 }
 #finger-grid{
 	column-gap: 100px;
@@ -379,6 +390,7 @@ header .kata h1 {
 	width: 140%;
 	height: 200px;
 	border: 1px solid black;
+    color: rgba(12, 42, 125, 0.881);
 }
 .finger-content h2{
 	font-weight: 400;
@@ -401,6 +413,7 @@ header .kata h1 {
 
 .support h3{
     text-align: center;
+    color: rgba(12, 42, 125, 0.881);
 }
 
 .support img{
