@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Astor Bandung Hotel - Convenient hotel in the heart of Bandung</title>
+	<link rel="stylesheet" type="text/css" href="bandung_style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-datepicker.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins&family=Roboto:wght@100&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+	<div id="container">
+		<div class="navbar" id="navbar">
+			<div id="navbar-left">
+				<div id="logo">
+					<img src="logogrey.png">
+				</div>
+			</div>
+			<div id="navbar-right">
+				<ul>
+					<li id="book"><a href="#divOne">BOOK NOW</a></li>
+					<li id="contact"><a href="">CONTACT US</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="overlay" id="divOne">
+			<div class="wrapper">
+				<h2>BOOKING HOTEL REGISTRATION</h2>
+				<a href="javascript:history.back()" class="close">&times;</a>
+				<div class="overlay-content">
+					<div class="overlay-container">
+						<form action="booked.html" method="GET">
+							<label>Full Name</label>
+							<input type="text" placeholder="Your First Name" name="first-name" required>
+							<label>E-Mail</label>
+							<input type="email" placeholder="Your Last Name" name="last-name" required>
+							<label>Date</label>						
+							<div class="date-wrapper" id="dater">
+								    <div class="input-daterange input-group" >
+								    	<input type="text" class="input-sm form-control" name="start" id="date1" required/>
+								    	<span class="input-group-addon" id="addon">to</span>
+								    	<input type="text" class="input-sm form-control" name="end" id="date2" required/>
+								    </div>
+							</div>
+							<select name="type" id="tipe" name="type-room">
+								<option value="725131" id="standard">Standard</option>
+								<option value="985500" id="superior">Superior</option>
+								<option value="1213250" id="junior">Junior Suite</option>
+								<option value="1534800" id="suite">Suite</option>
+							</select>
+							<label>Total Room</label>
+							<input type="text" placeholder="How Many Rooms" id="total-room" name="many-room" required>
+							<label>Total</label>
+							<br>
+							<input type="text" id="valuess" name="biaya" readonly>
+							<br>
+							<input type="text" id="transaction-id" name="id" readonly>
+							<input type="submit" value="Countinue" id="submits" disabled onclick="submitbutton()">
+							<br>
+							<input type="checkbox" value="true" id="ceksbox">
+							<label id="term"> Agree to the term and conditions</label>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="header">
+
+			<div id="deskripsi">
+				<h1 id="vvv">Selamat Datang di Hotel Bandung</h1>
+				<p>Astor Bandung Hotel menawarkan lokasi yang sangat strategis di pusat kota Bandung, sebuah kota yang terus berkembang di Jawa Barat. Terletak dengan keunggulan di jalan penghubung destinasi wisata yang menarik, seperti Tangkuban Perahu dan Ciwidey, hotel kami menjadi pilihan ideal bagi para pelancong yang mencari keseimbangan antara bisnis dan rekreasi.</p>
+				<p>Kontak Kami</p>
+				<div id="sosmed">
+					<img src="icon/facebook2.png">
+					<img src="icon/whatsapp2.png">
+					<img src="icon/instagram2.png">
+				</div>
+			</div>
+		</div>
+		<div id="contact-header">
+			<p>bandungastor@astorinternational.com</p>
+			<img src="icon/phone2.png">
+			<p>+62 822 6232 4201</p>
+			<img src="icon/whatsapp2.png">
+			<p>+62 228 2326 1024</p>
+		</div>
+		<hr>
+		<div id="facilities">
+			<h1>Facilities</h1>
+		<div class="content-facilities-grid">
+			<div class="icon-facilities">
+				<img src="icon/wifi.png">
+				<p>Wifi Area</p>
+			</div>
+			<div class="icon-facilities">
+				<img src="icon/swimming-pool.png">
+				<p>Swimming Pool</p>
+			</div>
+			<div class="icon-facilities">
+				<img src="icon/parking.png">
+				<p>Car Park</p>
+			</div>
+			<div class="icon-facilities">
+				<img src="icon/hotel-bell.png">
+				<p>Restaurant</p>
+			</div>
+			<div class="icon-facilities">
+				<img src="icon/gym.png">
+				<p>Fitness Center</p>
+			</div>
+			<div class="icon-facilities">
+				<img src="icon/sofa.png">
+				<p>Family Room</p>
+			</div>
+			<div></div>
+			<div></div>
+			<div class="icon-facilities">
+				<img src="icon/playground.png">
+				<p>Kids Club</p>
+			</div>
+			<div class="icon-facilities">
+				<img src="icon/clock.png">
+				<p>Room Service</p>
+			</div>
+		</div>
+		</div>
+		<div id="services">
+			<h1>Services</h1>
+			<div class="content-services-grid">
+			<div class="icon-facilities">
+				<img src="icon/policeman.png">
+				<p>24 Hour Security</p>
+			</div>
+			<div class="icon-facilities">
+				<img src="icon/check-in.png">
+				<p>24 Hour Front Desk</p>
+			</div>
+			<div class="icon-facilities">
+				<img src="icon/suitcase.png">
+				<p>Luggage Storage</p>
+			</div>
+			<div class="icon-facilities">
+				<img src="icon/washing-machine.png">
+				<p>Laundry Service</p>
+			</div>
+			<div class="icon-facilities">
+				<img src="icon/money-exchange.png">
+				<p>Currency Exchange</p>
+			</div>
+		</div>
+		</div>
+		<div id="accomodation">
+			<h1>Accomodation Options</h1>
+			<div id="accomodation-carousel">
+				<div class="box">
+					<div class="accomodation-tab">
+						<img src="img/b_standard.jpg">
+						<p>IDR 725.131</p>
+						<h1>Standard Room</h1>
+						<h4>Combining comfort and style with all the amenities of the Superior Room but with a private balcony to sit and enjoy the pool and garden view or a ground floor terrace with direct access to the pool. </h4>
+						<div class="accomodation-book">
+							<a href="#divOne" onclick="standardBook()">Book</a>
+						</div>
+					</div>
+				</div>
+				<div class="box">
+					<div class="accomodation-tab">
+						<img src="img/b_superior.jpg">
+						<p>IDR 985.500</p>
+						<h1>Superior Room</h1>
+						<h4>Immerse yourself in the serenity of our hotel rooms, where every detail is tailored for your peace of mind. Experience modern comforts and warm hospitality as you book your stay with us, creating moments that linger long after your departure. </h4>
+						<div class="accomodation-book">
+							<a href="#divOne" onclick="superiorBook()">Book</a>
+						</div>
+					</div>
+				</div>
+				<div class="box">
+					<div class="accomodation-tab">
+						<img src="img/b_junior-suite.jpg">
+						<p>IDR 1.213.250</p>
+						<h1>Junior Suite Room</h1>
+						<h4>Discover Serene Comfort: Our thoughtfully designed hotel rooms offer a perfect blend of style and relaxation. Immerse yourself in modern amenities for a delightful stay. Book now and experience the epitome of comfort in every moment. </h4>
+						<div class="accomodation-book">
+							<a href="#divOne" onclick="juniorBook()">Book</a>
+						</div>
+					</div>
+				</div>
+				<div class="box">
+					<div class="accomodation-tab">
+						<img src="img/b_suite.jpg">
+						<p>IDR 1.534.800</p>
+						<h1>Suite Room</h1>
+						<h4>Our cozy hotel rooms redefine comfort with thoughtful design and modern amenities. Book your stay now for a perfect blend of relaxation and sophistication, ensuring each moment becomes a cherished memory. </h4>
+						<div class="accomodation-book">
+							<a href="#divOne" onclick="suiteBook()">Book</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="dots">
+				<button class="dot"></button>
+				<button class="dot"></button>
+				<button class="dot"></button>
+				<button class="dot"></button>
+			</div>
+		</div>
+		<div id="meeting">
+			<div id="meeting-deskripsi">
+				<h1>"Elevate Your Moments, Unveil Perfection, Your Unforgettable Experience!"</h1>
+				<p>Step into a world of unparalleled luxury and sophistication at our exquisite hotel venue. Nestled in the heart of the city, our meticulously designed space offers more than just accommodation; it promises an experience of opulence and comfort like no other. From the elegantly appointed rooms to the state-of-the-art amenities, every detail has been curated to ensure your stay transcends expectations. Immerse yourself in the perfect blend of contemporary elegance and warm hospitality, making our hotel venue the ideal choice for creating unforgettable memories.</p>
+			</div>
+		</div>
+	<div id="inside">
+		<h1>Look Inside Our Hotel</h1>
+		<div class="swiper">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><img src="img/b_inside1.jpg"></div>
+				<div class="swiper-slide"><img src="img/b_inside2.jpg"></div>
+				<div class="swiper-slide"><img src="img/b_inside3.jpg"></div>
+				<div class="swiper-slide"><img src="img/b_inside4.jpg"></div>
+			</div>
+			<div class="swiper-pagination"></div>
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>
+		</div>
+	</div>
+	<div id="finger">
+		<img src="img/finger.jpg">
+		<div id="finger-tab">
+			<h1>Astor at your fingernail</h1>
+			<div id="finger-grid">
+				<div class="finger-content">
+					<h2>Butler Chat </h2>
+					<p>During entire stay, you can contact at any time of day or night to help you schedule hotel services.</p>
+				</div>
+				<div class="finger-content">
+					<h2>Loyalty Rewards </h2>
+					<p>15% off your room rate instantly when booking via app & receive an exclusive email</p>
+				</div>
+				<div class="finger-content">
+					<h2>Best Prices</h2>
+					<p>Discounts increase the more you stay with us! It starts at 10% and goes up to 20%.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<div id="footer-content">
+			<h1>Stay Connected</h1>
+			<div id="footer-sosmed">
+				<img src="icon/facebook2.png">
+				<img src="icon/whatsapp2.png">
+				<img src="icon/instagram2.png">
+			</div>
+			<br>
+			<br>
+			<p>Copyright 2023 © Astor International</p>
+			<a href="">Disclaimer</a>
+		</div>
+	</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="bootstrap/js/bootstrap-datepicker.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+	const swiper = new Swiper('.swiper', {
+		loop: true,
+		pagination: {
+			el: '.swiper-pagination',
+		},
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+	});
+	    $('#dater .input-daterange').datepicker({
+    });
+	    setInterval(checkboxValue,500);
+	    setInterval(valueOption,500);
+	    function valueOption(){
+	    	let totalroom = document.getElementById('total-room').value;
+	    	let dat1 = document.getElementById('date1').value;
+	    	let dat2 = document.getElementById('date2').value;
+	    	let Difference_In_Time = new Date(dat2).getTime() - new Date(dat1).getTime();
+	    	let Difference_In_Days = Math.round(Difference_In_Time / (1000 * 3600 * 24));
+	    	let type = document.getElementById('tipe').value;
+	    	document.getElementById('valuess').value = "IDR " + Math.round(type * Difference_In_Days * totalroom).toLocaleString() ;
+	    	console.log(totalroom);
+	    }
+	    function checkboxValue(){
+	    	if (document.querySelector('#ceksbox').checked){
+	    		console.log("nasasnoa")
+	    		document.getElementById('submits').removeAttribute("disabled");
+	    	}else{
+	    		document.getElementById('submits').setAttribute("disabled","disabled")
+	    	}
+	    }
+	    function juniorBook(){
+	    	document.getElementById('junior').setAttribute("selected","selected")
+	    	document.getElementById('standard').removeAttribute("selected")
+	    	document.getElementById('suite').removeAttribute("selected")
+	    	document.getElementById('superior').removeAttribute("selected")
+	    }
+	    function standardBook(){
+	    	document.getElementById('standard').setAttribute("selected","selected")
+	    	document.getElementById('junior').removeAttribute("selected")
+	    	document.getElementById('suite').removeAttribute("selected")
+	    	document.getElementById('superior').removeAttribute("selected")
+	    }
+	    function suiteBook(){
+	    	document.getElementById('suite').setAttribute("selected","selected")
+	    	document.getElementById('junior').removeAttribute("selected")
+	    	document.getElementById('standard').removeAttribute("selected")
+	    	document.getElementById('superior').removeAttribute("selected")
+	    }
+	    function superiorBook(){
+	    	document.getElementById('superior').setAttribute("selected","selected")
+	    	document.getElementById('junior').removeAttribute("selected")
+	    	document.getElementById('suite').removeAttribute("selected")
+	    	document.getElementById('standard').removeAttribute("selected")
+	    }
+	    function submitbutton(){
+	    	let dat1 = document.getElementById('date1').value;
+	    	let dat2 = document.getElementById('date2').value;
+	    	if (dat2 <= dat1){;
+	    		alert("Minimal penyewaan hotel adalah satu hari, Dimohon Pengertiannya, Terima Kasih")
+	    		document.getElementById("submits").disabled = true; 
+	    	}else {
+	    		document.getElementById("transaction-id").value =  Math.floor(Math.random() * 192347)
+	    	}
+	    }
+</script>
+</body>
+</html>
