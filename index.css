@@ -162,6 +162,11 @@ header .kata h1 {
     position: relative;
 }
 
+.hotel2 {
+    float: right;
+    position: relative;
+}
+
 .img1 {
     width: 400px;
     height: 300px;
@@ -204,6 +209,34 @@ header .kata h1 {
     top: 280px;
     right: 180px;
     color: aliceblue;
+}
+
+.hotel1 .text1 a{
+    padding-left: 70px;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.hotel1 .text1 #map{
+    padding-left: 70px;
+}
+
+.hotel2 .text1 {
+    position: absolute;
+    top: 280px;
+    right: 180px;
+    color: aliceblue;
+}
+
+.hotel2 .text1 a{
+    padding-left: 70px;
+    text-decoration: none;
+    color: rgb(255, 250, 250);
+}
+
+.hotel2 .text1 #map{
+    padding-left: 70px;
+    color: black;
 }
 
 .memo {
