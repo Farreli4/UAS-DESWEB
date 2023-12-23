@@ -67,3 +67,9 @@
 #icon-left img{
 	width: 30%;
 }
+@media only screen and (max-width: 650px){
+	#container-tab{
+		width: auto;
+		
+	}
+}

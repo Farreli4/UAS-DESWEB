@@ -700,4 +700,13 @@ input[type=date]{
 	#inside{
 		height: 50%;
 	}
+	.wrapper{
+		width: 90%;
+	}
+	.wrapper h2{
+		font-size: 16px;
+	}
+	.overlay-content{
+		font-size: 12px;
+	}
 }
