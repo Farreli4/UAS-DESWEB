@@ -116,7 +116,7 @@ body{
 	width: 80%;
 }
 #content-container{
-	margin: 50px 0;
+	margin: 100px 0;
 	text-align: center;
 }
 #content-container h1{
@@ -176,4 +176,42 @@ footer p{
 	display: grid;
 	grid-template-columns: 150px 150px 150px 150px 150px 150px;
 	align-items: center;
+}
+.container-hotel{
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	column-gap: 20px;
+	justify-content: center;
+}
+.box{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	text-align: left;
+	width: 100%;
+	height: 35vh;
+	background-color: darkred;
+	border: 4px solid #141d72;
+}
+.box p{
+	font-weight: bold;
+	font-size: 25px;
+	color: whitesmoke;
+	margin: 0;
+	padding: 5px 10px;
+
+}
+#box-denpasar{
+	background-image: url("../img/inside4.jpg");
+	background-size: cover;
+}
+#box-bandung{
+	background-image: url("../img/b_inside1.jpg");
+	background-size: cover;
+}
+.link-box{
+	display: block;
+	width: 25%;
+	height: auto;
 }

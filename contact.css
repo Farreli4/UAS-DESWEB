@@ -1,21 +1,92 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@400;500;600;700;900&display=swap');
 
-* {
+body{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
 }
-
-header{
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+.container{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
 }
-
+#header{
+    padding-top: 100px;
+    overflow: auto;
+    height: auto;
+}
+#header h1{
+    margin: 0;
+    padding: 0;
+    color: #141d72;
+    text-align: center;
+    font-weight: 500;
+}
+.navbar{
+    background-color: #141d72 ;
+    transition: 0.5s;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    z-index: 200;
+}
+#navbar-left{
+    display: flex;
+    justify-content: left;
+    padding-left: 20px;
+    width: 30%;
+    height: 100%;
+    float: left;
+    align-items: center;
+}
+#logo{
+    justify-content: center;
+    display: flex;
+    width: 35%;
+    height: auto;
+    border-radius: 5px;
+    padding: 10px 10px;
+}
+#navbar-left img{
+    width: 100%;
+}
+.navbar-right{
+    display: flex;
+    height: 100%;
+    float: right;
+    margin-right: 20px;
+    align-items: center;
+}
+.navbar-right ul{
+    list-style-type: none;
+    vertical-align: middle;
+}
+.navbar-right li{
+    color: whitesmoke;
+    float: right;
+    font-size: 18px;
+    margin-right: 20px;
+}
+.navbar-right li a {
+    font-size: 17px;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    color: whitesmoke;
+    text-decoration: none;
+    --c:linear-gradient(#ffffff 0 0); 
+    padding-bottom: .15em;
+    background: var(--c), var(--c);
+    background-size: .3em .1em;
+    background-position:50% 100%;
+    background-repeat: no-repeat;
+    transition: .3s linear, background-size .3s .2s linear;
+}
+.navbar-right li a:hover {
+    background-size: 40% .1em;
+    background-position: 10% 100%, 90% 100%;
+}
 .navigation {
     width: 100%;
     padding: 20px 20px 10px 20px;
@@ -123,10 +194,11 @@ header{
 }
 
 .contact{
+    margin-bottom: 20px;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
 }
 
 .address{
@@ -134,7 +206,7 @@ header{
     border: 0.5px solid rgb(0, 0, 0);
     text-align: center;
     width: 400px;
-    height: 300px;
+    height: auto;
 }
 
 .address h4{
@@ -153,7 +225,7 @@ header{
     border: 0.5px solid rgb(0, 0, 0);
     text-align: center;
     width: 400px;
-    height: 300px;
+    height: auto;
 }
 
 .phone h4{
@@ -184,4 +256,64 @@ header{
     width: 100px;
     height: 100px;
     margin-top: 30px;
+}
+
+footer{
+    flex-direction: row;
+    display: flex;
+    background-color: #0F2167;
+    height: 200px;
+}
+footer img{
+    width: 40%;
+}
+footer ul{
+    padding: 0;
+    justify-content: center;
+    column-gap: 20px;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+footer ul li a{
+    font-size: 13px;
+    text-decoration: none;
+    color: whitesmoke;
+}
+#footer-left{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+footer p{
+    font-size: 10px;
+    color: whitesmoke;
+}
+#footer-right{
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    margin: 0;
+    color: whitesmoke;
+    font-size: 10px;
+    justify-content: center;
+}
+#list-sponsor img{
+    width: 70%;
+}
+#list-sponsor{
+    width: 50%;
+    display: grid;
+    grid-template-columns: 150px 150px 150px 150px 150px 150px;
+    align-items: center;
+}
+#footer-right h1{
+    font-weight: 500;
+    color: whitesmoke;
 }
