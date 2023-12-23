@@ -750,7 +750,7 @@ header .kata h1 {
     }
     .navbar-right ul{
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         width: 100%;
         height: auto;
         text-align: center;

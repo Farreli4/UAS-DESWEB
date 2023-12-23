@@ -593,6 +593,9 @@ input[type=date]{
 	#logo{
 		width: 55%;
 	}
+	#logo img{
+		width: auto;
+	}
 	#navbar-left{
 		justify-content: center;
 	}
@@ -640,7 +643,7 @@ input[type=date]{
 	#deskripsi{
 		width: 70vw;
 	}
-	#deskripsi h1{
+		#deskripsi h1{
 		font-size: 17px;
 	}
 	#deskripsi p{
@@ -650,7 +653,17 @@ input[type=date]{
 		padding: 0 100px;
 	}
 	#contact-header{
-		font-size: 11px;
+		font-size: 8px;
+	}
+	#contact-header p{
+		width: 100%;
+		margin-right: 0;
+	}
+	#contact-header #kiri{
+		margin-right: 40px;
+	}
+	#contact-header img{
+		width: 5%;
 	}
 	#meeting-deskripsi{
 		width: 100%;
@@ -677,16 +690,25 @@ input[type=date]{
 	}
 	#facilities{
 		transform: scale(0.40);
+		margin-bottom: -200px;
 	}
 	#services{
 		background-color: white;
 		transform: scale(0.45);
+		margin-bottom: -100px;
 	}
 	#accomodation{
 		padding: 0 50px;
 	}
+	#accomodation h1{
+		font-size: 15px;
+	}
+	#accomodation-carousel{
+		margin-top: -150px;
+	}
 	.dots{
 		transform: scale(0.5);
+		margin-top: -150px;
 	}
 	.swiper{
 		transform: scale(0.8);
@@ -697,5 +719,17 @@ input[type=date]{
 	}
 	#inside{
 		height: 50%;
+	}
+	.wrapper{
+		width: 90%;
+	}
+	.wrapper h2{
+		font-size: 16px;
+	}
+	.overlay-content{
+		font-size: 12px;
+	}
+	#footer{
+		position: relative;
 	}
 }

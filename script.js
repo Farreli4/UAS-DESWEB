@@ -32,7 +32,7 @@ dots.addEventListener('click', e => {
 function changeAcco(){
 	var scrollValue = window.scrollY;
 	var acco = document.getElementById('accomodation-carousel')
-	if (scrollValue > 1200){
+	if (scrollValue > 1000){
 		acco.style.transform = "scale(1.0)";
 	}
 }
