@@ -24,6 +24,13 @@ header{
     position: relative;
 }
 
+#menu-bars{
+    display: none;
+    align-items: center;
+}
+#menu-bars img{
+    width: 10%;
+}
 .navigation {
     width: 100%;
     padding: 20px 0 10px 0;
@@ -510,99 +517,8 @@ header .kata h1 {
     }     
 }
 
-@media screen and (max-width: 990px) {
-    .navigation .box-navigation .box:nth-child(2) {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 50px;
-        right: 50px;
-        background-color: #fff;
-        width: 250px;
-        border-radius: 10px;
-        opacity: 0;
-        transition: all .3s ease;
-    }
-
-    .navigation .box-navigation .menu-navigation.menu-active{
-        opacity: 1;
-        top: 100px;
-    }
-
-    .navigation .box-navigation .box:nth-child(2) ul {
-        flex-direction: column;
-    }
-
-    .navigation .box-navigation .box:nth-child(2) ul li {
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-
-    .navigation .box-navigation .box:nth-child(2) ul li a {
-        color: black;
-    }
-
-    .navigation .box-navigation .box:nth-child(3){
-        display: flex;
-        align-items: center;
-    }
-
-    .navigation .box-navigation .box:nth-child(3) i{
-        font-size: 30px;
-    }
-
-    header .kata h1 {
-        font-size: 35px;
-    }
-
-    .about .box-about {
-        flex-direction: column-reverse;
-    }
-
-    .about .box-about .box:nth-child(1) {
-        text-align: center;
-        margin-top: 30px;
-    }
-
-    .about .box-about .box:nth-child(2) img {
-        width: 400px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    header .kata h1 {
-        font-size: 30px;
-    }
-}
-
-@media screen and (max-width: 645px) {
-    header .kata h1{
-        font-size: 25px;
-    }
-
-    .about .box-about .box:nth-child(1) h1 {
-        font-size: 25px;
-    }
-
-    .about .box-about .box:nth-child(2) p {
-        font-size: 12px;
-    }
-
-    .about .box-about .box:nth-child(2) img {
-        width: 300px;
-    }
-
-
-}
-
-@media screen and (max-width: 575px) {
-    header .kata h1{
-        font-size: 17px;
-    }
-}
-
 .container-konten{
-    
+    overflow: hidden;
 }
 .sup-content{
     border: 2px solid rgba(12, 42, 125, 0.881);
@@ -684,10 +600,10 @@ header .kata h1 {
 }
 .navbar-right{
     display: flex;
-    height: 100%;
     float: right;
     margin-right: 20px;
     align-items: center;
+    height: 100%;
 }
 .navbar-right ul{
     list-style-type: none;
@@ -717,4 +633,152 @@ header .kata h1 {
 .navbar-right li a:hover {
     background-size: 40% .1em;
     background-position: 10% 100%, 90% 100%;
+}
+@media screen and (max-width: 990px) {
+    .navigation .box-navigation .box:nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        right: 50px;
+        background-color: #fff;
+        width: 250px;
+        border-radius: 10px;
+        opacity: 0;
+        transition: all .3s ease;
+    }
+
+    .navigation .box-navigation .menu-navigation.menu-active{
+        opacity: 1;
+        top: 100px;
+    }
+
+    .navigation .box-navigation .box:nth-child(2) ul {
+        flex-direction: column;
+    }
+
+    .navigation .box-navigation .box:nth-child(2) ul li {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .navigation .box-navigation .box:nth-child(2) ul li a {
+        color: black;
+    }
+
+    .navigation .box-navigation .box:nth-child(3){
+        display: flex;
+        align-items: center;
+    }
+
+    .navigation .box-navigation .box:nth-child(3) i{
+        font-size: 30px;
+    }
+
+    header .kata h1 {
+        font-size: 35px;
+    }
+
+    .about .box-about {
+        flex-direction: column-reverse;
+    }
+
+    .about .box-about .box:nth-child(1) {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .about .box-about .box:nth-child(2) img {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header .kata h1 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 645px) {
+    header .kata h1{
+        font-size: 25px;
+    }
+
+    .about .box-about .box:nth-child(1) h1 {
+        font-size: 25px;
+    }
+
+    .about .box-about .box:nth-child(2) p {
+        font-size: 12px;
+    }
+
+    .about .box-about .box:nth-child(2) img {
+        width: 300px;
+    }
+    .navbar-right{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        background-color: #fff;
+        width: 200px;
+        border: 2px solid black;
+        border-radius: 10px;
+        opacity: 0;
+    }
+    .navbar-right.active{
+        opacity: 1;
+        height: auto;
+    }
+    .navbar-right ul li a{
+        font-size: 14px;
+        color: black;
+    }
+    .navbar-right ul li{
+        margin-right: 100px;
+        text-align: left;
+        width: 100%;
+    }
+    .navbar-right ul{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    #menu-bars{
+        padding-right: 20px;
+        justify-content: flex-end;
+        height: 100%;
+        display: flex;
+        z-index: 400000;
+    }
+    .link-box{
+        width: 40%;
+    }
+    .memo{
+        transform: translateX(-150px) scale(0.3);
+    }
+    .discount{
+        transform: scale(0.6);
+    }
+    .news{
+        transform: scale(0.5);
+        font-size: 25px;
+    }
+    .support{
+        transform: scale(0.7);
+    }
+    #logo-navbarfloat{
+        width: 70%;
+    }
+
+}
+
+@media screen and (max-width: 575px) {
+    header .kata h1{
+        font-size: 17px;
+    }
+
 }

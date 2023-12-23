@@ -1,8 +1,13 @@
 const menuBar = document.querySelector(".menu-bar");
 const menuNav = document.querySelector(".menu-navigation");
+const menuBar2 = document.getElementById("menu-bars");
+const menuNav2 = document.querySelector(".navbar-right");
 
 menuBar.addEventListener("click", function () {
     menuNav.classList.toggle("menu-active")
+});
+menuBar2.addEventListener("click", function () {
+    menuNav2.classList.toggle("active")
 });
 
 function changebg(){
