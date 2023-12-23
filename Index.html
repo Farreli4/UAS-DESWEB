@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Poppins:wght@400;500;600;700;900&family=Roboto+Condensed:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins&family=Roboto:wght@100&display=swap" rel="stylesheet"> 
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css" />
     <title>Beranda</title>
 </head>
@@ -16,15 +15,11 @@
     <section class="navigation">
         <div class="container">
             <div class="box-navigation">
-                <div class="box">
-                    <h1>ASTOR</h1>
+                <div id="logo">
+                    <img src="img/logo.png">
                 </div>
                 <div class="box menu-navigation">
                     <ul>
-                        <li>
-
-                            <a href="offer.html">Offers</a>
-                        </li>
                         <li><a href="hotels.html">Hotels</a></li>
                         <li><a href="meeting.html">Meetings</a></li>
                         <li><a href="contact.html">Contact Us</a></li>
@@ -41,14 +36,26 @@
         <h1>Where the trust is nothing new</Em></h1>
     </section> 
 </header>
-
+        <div class="navbar" id="navbar">
+            <div id="navbar-left">
+                <div id="logo-navbarfloat">
+                    <img src="img/logo.png">
+                </div>
+            </div>
+            <div class="navbar-right">
+                <ul>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="meeting.html">Meetings</a></li>
+                    <li><a href="hotels.html">Hotels</a></li>
+                </ul>
+            </div>
+        </div>
+<div class="container-konten">
     <section class="about">
         <div class="container">
             <div class="box-about">
                 <div class="box">
-
                     <h2 class="kata1">ASTORISSING Things™</h2>
-
                     <p>"From local experiences to authentic ASTOR inclusions, the ASTORissing Things™ concierge catalog has it all. Through innovative ideas and genuine service, it is individually crafted to address each and every hotel and its guests' unique preferences and needs."</p>
                 </div>
                 <div class="box">
@@ -58,29 +65,21 @@
         </div>
     </section>
 
-    <section class="hotel-features">
-        <div class="fh">
-            <div class="div-kata2">
-                <h1 id="kata2">Featured Hotels</h1>
-            </div>
-            <div class="container-img">
-             <div class="hotel1">
-                <img class="img1" src="hotel1.jpg">
-                <div class="text1">
-                    <a href="denpasar.html">ASTOR Denpasar Hotel & Resort</a>
-                    <img id="map" src="map-pin-line.png">Denpasar
+        <div id="content-container">
+            <h1>Featured Hotels</h1>
+            <div class="container-hotel">
+                <a href="denpasar.html" class="link-box">
+                <div class="box-hotel" id="box-denpasar">
+                    <p>Bali</p>
                 </div>
-            </div>
-            <div class="hotel2">
-                <img class="img2" src="bandung1.jpg">
-                <div class="text1">
-                    <a href="bandung.html">ASTOR Bandung Hotel & Resort</a>
-                    <img id="map" src="map-pin-line.png">Bandung
+                </a>
+                <a href="bandung.html" class="link-box">
+                <div class="box-hotel" id="box-bandung">
+                    <p>Bandung</p>
                 </div>
-            </div>
+                </a>
             </div>
         </div>
-    </section>
 
     <section class="memo">
         <div class="memo1">
@@ -104,13 +103,13 @@
                 <img class="satu" src="memo/pexels-mikhail-nilov-7683065.jpg">
             </div>
             <div>
-                <img class="dua" src="memo/pexels-alleksana-4239546.jpg"
+                <img class="dua" src="memo/pexels-alleksana-4239546.jpg">
             </div>
         </div>
     </section>
 
     <div class="discount">
-        <div style="background-color: #fff; height: 100vh;">
+        <div style="height: auto;">
         <div class="content">
             <div id="text-content">
                 <h5>Exclusive for You</h5>
@@ -135,59 +134,38 @@
                 <h5>ASTOR Priority Johnny Cage & Conference Center</h5>
                 <h2>ASTOR PRIORITY JOHNNY CAGE HOLDS</h2>
                 <p>ASTOR Priority Johnny Cage Hotel presented their culinary event, "The Art of , " featuring the best dishes created by the hotel's Chef</p>
-                <a href="news.html" style="text-decoration: none;">READ MORE ></a>
+                <a href="news.html" style="text-decoration: none; display:none;">READ MORE ></a>
             </div>
             <div class="news2">
                 <img src="pexels-pixabay-53148.jpg">
                 <h5>ASTOR Denpasar City Hotel</h5>
                 <h2>ENJOY ROOFTOP BBQ AT AN AFFORDABLE PRICE</h2>
                 <p>Enjoying delicious BBQ under the sunset sky with family and friends. Enjoy Rooftop BBQ at an Affordable Price. Every Tuesday from 6 - 10 PM.</p>
-                <a>READ MORE ></a>
+                <a style="text-decoration: none; display:none;">READ MORE </a>
             </div>
         </div>
     </div>
 
-    <div id="finger">
-		<img src="img/finger.jpg">
-		<div id="finger-tab">
-			<h1>Astor at your fingernail</h1>
-			<div id="finger-grid">
-				<div class="finger-content">
-					<h2>Butler Chat </h2>
-					<p>During entire stay, you can contact at any time of day or night to help you schedule hotel services.</p>
-				</div>
-				<div class="finger-content">
-					<h2>Loyalty Rewards </h2>
-					<p>15% off your room rate instantly when booking via app & receive an exclusive email</p>
-				</div>
-				<div class="finger-content">
-					<h2>Best Prices</h2>
-					<p>Discounts increase the more you stay with us! It starts at 10% and goes up to 20%.</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
     <div class="support">
         <div>
-            <h3>supported by</h3>
+            <h3>Supported by</h3>
         </div>
         <div class="sup">
-        <div>
+        <div class="sup-content">
             <img id="sup1" src="support/614140-15gAwk1530612626.png">
         </div>
-        <div>
+        <div class="sup-content">
             <img src="support/862-8627474_1500-x-1708-0-cool-wolf-logos-easy.png">
         </div>
-        <div>
+        <div class="sup-content">
             <img id="sup2" src="support/pngtree-elegant-eagle-logo-design-template-png-image_3555425.jpg">
         </div>
-        <div>
+        <div class="sup-content">
             <img id="sup3" src="support/pngtree-simple-elegant-monoline-butterfly-logo-design-png-image_4896380.jpg">
         </div>
-        </div>
     </div>
-
+</div>
+    </div>
     <div id="footer">
 		<div id="footer-content">
 			<h1>Stay Connected</h1>
@@ -202,7 +180,6 @@
 			<a href="">Disclaimer</a>
 		</div>
 	</div>
-
     <script src="./jawa.js"></script>
 </body>
 </html>

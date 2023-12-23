@@ -3,7 +3,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
 }
@@ -20,6 +19,9 @@ header{
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    border-bottom: 10px solid #0b103d;
+    z-index: 300;
+    position: relative;
 }
 
 .navigation {
@@ -89,7 +91,6 @@ header .kata h1 {
     height: 100vh;
     display: flex;
     align-items: center;
-    background-color: gainsboro;
 }
 
 .about .box-about {
@@ -131,11 +132,18 @@ header .kata h1 {
 .box p{
     color: rgba(12, 42, 125, 0.881);
 }
-
+.box img{
+    border: 5px solid rgba(12, 42, 125, 0.881);
+}
+#logo img{
+    width: 30%;
+}
+#logo{
+    width: 50%;
+}
 .hotel-features {
     width: 100%;
     height: 100vh;
-    background-color: gainsboro;
     margin-top: 100px;
 }
 
@@ -179,19 +187,22 @@ header .kata h1 {
     height: 300px;
     position: relative;
     margin-right: 40px;
+    border: 4px solid rgba(12, 42, 125, 0.881);
 }
 
 .dua {
     width: 400px;
     height: 300px;
     position: relative;
+    border: 4px solid rgba(12, 42, 125, 0.881);
 }
 
 .tiga {
     width: 400px;
     height: 300px;
     margin-left: 100px;
-    padding-right: 40px;
+    margin-right: 40px;
+    border: 4px solid rgba(12, 42, 125, 0.881);
 }
 
 #map {
@@ -242,8 +253,7 @@ header .kata h1 {
 .memo {
     width: 100%;
     height: auto;
-    background-color: gainsboro;
-    margin-top: 100px;
+    margin: 100px 0;
     justify-content: center;
     align-items: center;
 }
@@ -253,6 +263,7 @@ header .kata h1 {
     height: 300px;
     position: relative;
     margin-left: 100px;
+    padding-right: 40px;
     color: rgba(12, 42, 125, 0.881);
 }
 
@@ -291,27 +302,28 @@ header .kata h1 {
 }
 
 .discount {
-    background-color: gainsboro;
+    background-image: url("img/newyear2.jpg");
+    background-size: cover;
     width: 100%;
-    height: 100vh;
+    height: auto;
     margin-top: 100px;
     justify-content: center;
     align-items: center;
 }
 
 .discount .content {
-    margin-top: 50px;
-    padding-top: 50px;
-    background-color: gainsboro;
+    margin: 50px 0px;
+    border : 5px solid firebrick;
+    padding: 50px 0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 #text-content {
-    padding-top: 50px;
-    padding-right: 40px;
-    color: rgba(12, 42, 125, 0.881);
+    background-color: darkred;
+    padding: 20px 30px;
+    color: whitesmoke;
 }
 
 .img-content {
@@ -333,7 +345,7 @@ header .kata h1 {
 
 .news{
     width: 100%;
-    height: 100vh;
+    height: auto;
     background-color: rgb(255, 255, 255);
     margin-top: 100px;
 }
@@ -347,7 +359,7 @@ header .kata h1 {
 .news1 {
     margin-right: 40px;
     width: 400px;
-    height: 300px;
+    height: auto;
     position: relative;
     color: rgba(12, 42, 125, 0.881);
 }
@@ -377,7 +389,7 @@ header .kata h1 {
 
 .news2 {
     width:400px ;
-    height: 300px;
+    height: auto;
     position: relative;
     color: rgba(12, 42, 125, 0.881);
 }
@@ -442,6 +454,8 @@ header .kata h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 70px 0px;
+    gap: 40px;
 }
 
 .support h3{
@@ -452,45 +466,44 @@ header .kata h1 {
 .support img{
     width:100px ;
     height: 100px;
-    margin: 50px;
+    margin: 10px;
 }
 
 
 #footer{
-	padding: 20px 0;
-	text-align: center;
-	color: whitesmoke;
-	background-color: #144272;
-	width: 100%;
-	height: 270px;
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 100;
+    padding: 20px 0;
+    text-align: center;
+    color: whitesmoke;
+    background-color: #0F2167;
+    width: 100%;
+    height: 270px;
+}
+#footer h1{
+    font-weight: 100;
 }
 #footer-content{
-	font-weight: 300;
-	display: flex;
-	flex-direction: column;
+    gap: 10px;
+    font-weight: 100;
+    display: flex;
+    flex-direction: column;
 }
 #footer-sosmed{
-	justify-content: center;
-	column-gap: 20px;
-	display: flex;
-	flex-direction: row;
+    justify-content: center;
+    column-gap: 20px;
+    display: flex;
+    flex-direction: row;
 }
 #footer-sosmed img{
-	width: 3%;
+    width: 3%;
 }
-
-#footer-content h1 {
-    font-family: 'Montserrat', sans-serif;
-}
-
 #footer-content a{
-	font-weight: 300;
-	font-size: 14px;
-	text-decoration: none;
-	color: whitesmoke;
-    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    text-decoration: none;
+    color: whitesmoke;
 }
-
 @media screen and (max-width: 1200px) {
     .about .box-about .box:nth-child(2) img {
         width: 500px;
@@ -586,4 +599,122 @@ header .kata h1 {
     header .kata h1{
         font-size: 17px;
     }
+}
+
+.container-konten{
+    
+}
+.sup-content{
+    border: 2px solid rgba(12, 42, 125, 0.881);
+}
+#content-container{
+    margin: 70px 0;
+    text-align: center;
+}
+#content-container h1{
+    color: #141d72;
+    margin-bottom: 20px;
+}
+.container-hotel{
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    justify-content: center;
+}
+.box-hotel{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: left;
+    width: 100%;
+    height: 35vh;
+    background-color: darkred;
+    border: 4px solid #141d72;
+}
+.box-hotel p{
+    font-weight: bold;
+    font-size: 25px;
+    color: whitesmoke;
+    margin: 0;
+    padding: 5px 10px;
+}
+#box-denpasar{
+    background-image: url("img/inside4.jpg");
+    background-size: cover;
+}
+#box-bandung{
+    background-image: url("img/b_inside1.jpg");
+    background-size: cover;
+}
+.link-box{
+    display: block;
+    width: 25%;
+    height: auto;
+}
+.navbar{
+    border-top: 15px solid #0b103d ;
+    background-color: #141d72 ;
+    transition: 0.3s;
+    height: 70px;
+    width: 100%;
+    position: sticky;
+    z-index: 200;
+    top: -15px;
+}
+#navbar-left{
+    display: flex;
+    justify-content: left;
+    padding-left: 20px;
+    width: 30%;
+    height: 100%;
+    float: left;
+    align-items: center;
+}
+#logo-navbarfloat{
+    justify-content: center;
+    display: flex;
+    width: 35%;
+    height: auto;
+    border-radius: 5px;
+    padding: 10px 10px;
+}
+#navbar-left img{
+    width: 100%;
+}
+.navbar-right{
+    display: flex;
+    height: 100%;
+    float: right;
+    margin-right: 20px;
+    align-items: center;
+}
+.navbar-right ul{
+    list-style-type: none;
+    vertical-align: middle;
+}
+.navbar-right li{
+    color: whitesmoke;
+    float: right;
+    font-size: 18px;
+    margin-right: 20px;
+}
+.navbar-right li a {
+    font-size: 17px;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    color: whitesmoke;
+    text-decoration: none;
+    --c:linear-gradient(#ffffff 0 0); 
+    padding-bottom: .15em;
+    background: var(--c), var(--c);
+    background-size: .3em .1em;
+    background-position:50% 100%;
+    background-repeat: no-repeat;
+    transition: .3s linear, background-size .3s .2s linear;
+}
+.navbar-right li a:hover {
+    background-size: 40% .1em;
+    background-position: 10% 100%, 90% 100%;
 }
